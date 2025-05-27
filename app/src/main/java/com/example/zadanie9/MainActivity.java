@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    /**
+    /*
      * Metoda pomocnicza do aktualizacji listy displayItemsForListView
      * na podstawie settingNames, settingValues i settingUnits.
      * Należy ją wywołać po każdej zmianie wartości w settingValues.
