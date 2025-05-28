@@ -75,7 +75,6 @@ public class MainActivity extends AppCompatActivity {
                 int selectedValue = settingValues.get(selectedItemPosition);
 
                 editingLabelTextView.setText("Edytujesz: " + selectedName);
-
                 valueSeekBar.setProgress(selectedValue);
                 seekBarValueTextView.setText("Wartość: " + selectedValue + settingUnits.get(selectedItemPosition));
                 valueSeekBar.setEnabled(true);
@@ -85,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progressValue, boolean fromUser) {
                 if (fromUser && selectedItemPosition != -1) {
-
                     String unit = settingUnits.get(selectedItemPosition);
                     seekBarValueTextView.setText("Wartość: " + progressValue + unit);
                 }
